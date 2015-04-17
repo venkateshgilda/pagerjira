@@ -1,7 +1,7 @@
 {
   "name": "PagerDuty to JIRA Connector",
   "description": "Create JIRA tickets when a PagerDuty incident has been created.",
-  "repository": "https://github.com/ryanhoskin/pd2jira",
+  "repository": "https://github.com/venkateshgilda/pagerjira",
   "keywords": [
     "pagerduty",
     "JIRA"
