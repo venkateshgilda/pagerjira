@@ -1,13 +1,13 @@
 <?php
 $messages = json_decode($HTTP_RAW_POST_DATA);
 
-$jira_subdomain = getenv('JIRA_SUBDOMAIN');
-$jira_username = getenv('JIRA_USERNAME');
-$jira_password = getenv('JIRA_API_TOKEN');
-$jira_project = getenv('JIRA_PROJECT');
-$jira_issue_type = getenv('JIRA_ISSUE_TYPE');
-$pd_subdomain = getenv('PAGERDUTY_SUBDOMAIN');
-$pd_api_token = getenv('PAGERDUTY_API_TOKEN');
+$jira_subdomain = getenv('issues.apdbox.com');
+$jira_username = getenv('test');
+$jira_password = getenv('tester123');
+$jira_project = getenv('DBO');
+$jira_issue_type = getenv('incident');
+$pd_subdomain = getenv('trimble-navigation.pagerduty.com');
+$pd_api_token = getenv('VM1oYSzosKnRqSsp5sXj');
 
 if ($messages) foreach ($messages->messages as $webhook) {
   $webhook_type = $webhook->type;
